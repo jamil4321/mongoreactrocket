@@ -3,7 +3,6 @@ import { GlobalContext } from '../contextApi/GlobalState';
 import { Button, ListGroupItem } from 'reactstrap';
 
 const Todos = ({ id, item }) => {
-  const [modal,setModal] = useState(false);
   const { deleteTodo, completeTask, getTodo } = useContext(GlobalContext)
 
 
