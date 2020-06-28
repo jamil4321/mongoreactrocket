@@ -6,7 +6,9 @@ const initialState = {
     todo:[],
     loading:false
 }
-const url = "http://localhost:8000";
+// const url = "http://localhost:8000";
+
+const url = "http://app-52321a87-f8a8-4868-b4c8-aa737d4db5f9.cleverapps.io/"
 export const GlobalContext = createContext(initialState);
 
 export const GlobalProvider = ({children})=>{
@@ -42,7 +44,7 @@ export const GlobalProvider = ({children})=>{
         getTodo()
    }
     const addTodo = (item)=>{
-        axios.post(`${url}`,item)
+        axios.post(`${url}/add`,item)
         .then(res=>
             dispatch({
                 type:'ADD',
