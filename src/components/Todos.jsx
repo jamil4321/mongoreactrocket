@@ -1,15 +1,11 @@
 import React, { useContext,useState } from 'react';
 import { GlobalContext } from '../contextApi/GlobalState';
-import { Container, Button, ListGroup, ListGroupItem } from 'reactstrap';
+import { Button, ListGroupItem } from 'reactstrap';
 
 const Todos = ({ id, item }) => {
-  const [updatedItem,setUpdatedItem]=useState(item)
   const [modal,setModal] = useState(false);
   const { deleteTodo, completeTask, getTodo } = useContext(GlobalContext)
 
-  const toggle=()=>{
-    setModal(!modal)
-}
 
   const update = (id) => {
     const newTodo = {
