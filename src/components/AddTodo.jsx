@@ -44,7 +44,7 @@ const AddTodo = () => {
                         <Form onSubmit={onSubmit}>
                             <FormGroup>
                                 <Label for="title">Add Task</Label>
-                                <Input type="text" name="title" id="title" placeholder="Enter Book Title" onChange={e => setitem(e.target.value)}  />
+                                <Input type="text" name="title" id="title" placeholder="Enter Your Task" onChange={e => setitem(e.target.value)}  />
                             </FormGroup>
                             <Button
                                 color="dark"
