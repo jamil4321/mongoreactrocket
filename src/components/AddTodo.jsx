@@ -38,7 +38,7 @@ const AddTodo = () => {
                     <ModalHeader
                         toggle={toggle}
                     >
-                        Add Book Item
+                        Add Task
                     </ModalHeader>
                     <ModalBody>
                         <Form onSubmit={onSubmit}>
